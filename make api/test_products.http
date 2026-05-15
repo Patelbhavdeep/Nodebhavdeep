@@ -1,0 +1,50 @@
+### Make API - Product Endpoints
+@baseUrl = http://localhost:5000
+@contentType = application/json
+
+### Get All Products
+GET {{baseUrl}}/api/products
+Content-Type: {{contentType}}
+
+### Get Product by ID
+GET {{baseUrl}}/api/products/{{productId}}
+Content-Type: {{contentType}}
+
+### Create Product
+POST {{baseUrl}}/api/products
+Content-Type: {{contentType}}
+
+{
+  "title": "Laptop",
+  "description": "High-performance laptop",
+  "price": 999.99,
+  "image": "laptop.jpg",
+  "category": "Electronics",
+  "stock": 50
+}
+
+### Create Another Product
+POST {{baseUrl}}/api/products
+Content-Type: {{contentType}}
+
+{
+  "title": "Mouse",
+  "description": "Wireless mouse",
+  "price": 29.99,
+  "image": "mouse.jpg",
+  "category": "Accessories",
+  "stock": 100
+}
+
+### Create Third Product
+POST {{baseUrl}}/api/products
+Content-Type: {{contentType}}
+
+{
+  "title": "Keyboard",
+  "description": "Mechanical keyboard",
+  "price": 79.99,
+  "image": "keyboard.jpg",
+  "category": "Accessories",
+  "stock": 75
+}
